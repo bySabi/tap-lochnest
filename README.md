@@ -1,7 +1,8 @@
-#
+# tap-lochnest (TAP Loch Nest)
 
->
+> A TAP helper for output nested test name beside parent test name.
 
+![tap-lochnesttape](https://github.com/bySabi/tap-lochnest/blob/master/images/nessie.jpg?raw=true)
 
 
 ## Installation
@@ -64,6 +65,7 @@ test('a test', function (t) {
 });
 ```
 
+
 TAP Output will be:
 ```
 TAP version 13
@@ -88,6 +90,14 @@ ok 6 should be equal
 # pass  6
 
 # ok
+```
+
+## `delimiter` option
+Default nested test name separator is a `space`, but can be customize.
+
+Ex:
+```
+var test = lochNest(tape, { delimiter: ' | '});
 ```
 
 ## Contributing

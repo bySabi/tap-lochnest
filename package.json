@@ -1,7 +1,7 @@
 {
   "name": "tap-lochnest",
   "version": "1.0.0",
-  "description": "",
+  "description": "A TAP helper for output nested test name beside parent test name.",
   "main": "index.js",
   "scripts": {
     "test": "tap test/*.js"
