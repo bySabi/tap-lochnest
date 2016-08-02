@@ -1,0 +1,32 @@
+{
+  "name": "tap-lochnest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bySabi/tap-lochnest.git"
+  },
+  "author": "bySabi Files",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bySabi/tap-lochnest/issues"
+  },
+  "homepage": "https://github.com/bySabi/tap-lochnest#readme",
+  "keywords": [
+    "tape",
+    "tap",
+    "test",
+    "subtest",
+    "nest",
+    "nested",
+    "helper"
+  ],
+  "devDependencies": {
+    "tap": "^6.3.0",
+    "tape": "^4.6.0"
+  }
+}
