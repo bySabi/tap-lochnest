@@ -1,5 +1,7 @@
 # tap-lochnest (TAP Loch Nest)
 
+[![npm version](https://badge.fury.io/js/tap-lochnest.svg)](https://badge.fury.io/js/tap-lochnest)
+
 > A TAP helper for output nested test name beside parent test name.
 
 Is not tight to any TAP implementation, can be use with [tap](https://github.com/tapjs/node-tap) or [tape](https://github.com/substack/tape) on `node` and `browser`
@@ -18,8 +20,12 @@ npm install tap-lochnest --save-dev
 ## Usage
 
 ```javascript
-var tape = require('tape');
 var lochNest = require('tap-lochnest');
+```
+
+```javascript
+var tape = require('tape');
+
 var test = lochNest(tape, { delimiter: ' | '});
 
 var count = 0;
@@ -106,5 +112,8 @@ var test = lochNest(tape, { delimiter: ' | '});
 * Documentation improvement
 * Feel free to send any PR
 
-## LICENSE
-ISC
+## License
+
+[ISC][isc-license]
+
+[isc-license]:./LICENSE
