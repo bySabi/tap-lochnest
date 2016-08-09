@@ -4,7 +4,9 @@
   "description": "A TAP helper for output nested test name beside parent test name.",
   "main": "index.js",
   "scripts": {
-    "test": "tap test/*.js"
+    "lint": "eslint . --ext .js",
+    "testonly": "tap test/*.js",
+    "test": "npm run lint && npm run testonly"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/bySabi/tap-lochnest#readme",
   "keywords": [
+    "loch",
     "tape",
     "tap",
     "test",
@@ -26,6 +29,8 @@
     "helper"
   ],
   "devDependencies": {
+    "eslint": "3.x.x",
+    "eslint-modules-standard-deviation--es5": "1.x.x",
     "tap": "^6.3.0",
     "tape": "^4.6.0"
   }

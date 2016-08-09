@@ -1,11 +1,10 @@
 var tape = require('tape');
 var lochNest = require('../');
-var test = lochNest(tape, { delimiter: ' | '});
+var test = lochNest(tape, { delimiter: ' | ' });
 
 var count = 0;
 
 test('a set of some tests', function (t) {
-
   t.test('A', function (t) {
     t.equal(++count, 1);
     t.end();

@@ -8,11 +8,9 @@ function getTestArgs (name_, opts_, cb_) {
     var t = typeof arg;
     if (t === 'string') {
       name = arg;
-    }
-    else if (t === 'object') {
+    } else if (t === 'object') {
       opts = arg || opts;
-    }
-    else if (t === 'function') {
+    } else if (t === 'function') {
       cb = arg;
     }
   }
@@ -20,7 +18,6 @@ function getTestArgs (name_, opts_, cb_) {
 };
 
 function lochNest(tape, opts) {
-
   var delimiter = opts && opts.delimiter || ' ';
 
   var tapa = function (name_, opts_, cb_) {

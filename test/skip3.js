@@ -1,6 +1,6 @@
 var tape = require('tape');
 var lochNest = require('../');
-var test = lochNest(tape, { delimiter: ' | '});
+var test = lochNest(tape, { delimiter: ' | ' });
 
 test('some tests', function(t) {
   t.test('skip this', { skip: true }, function (t) {
