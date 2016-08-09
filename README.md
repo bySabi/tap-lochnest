@@ -26,13 +26,11 @@ var lochNest = require('tap-lochnest');
 
 ```javascript
 var tape = require('tape');
-
-var test = lochNest(tape, { delimiter: ' | '});
+var test = lochNest(tape, { delimiter: ' | ' });
 
 var count = 0;
 
 test('a set of some tests', function (t) {
-
   t.test('A', function (t) {
     t.equal(++count, 1);
     t.end();
@@ -75,8 +73,9 @@ test('a test', function (t) {
 ```
 
 
-TAP Output will be:
-```
+TAP Output
+
+```bash
 TAP version 13
 # a set of some tests
 # a set of some tests | A
@@ -105,8 +104,8 @@ ok 6 should be equal
 Default nested test name separator is a `space`, but can be customize.
 
 Ex:
-```
-var test = lochNest(tape, { delimiter: ' | '});
+```js
+var test = lochNest(tape, { delimiter: ' | ' });
 ```
 
 ## Contributing
