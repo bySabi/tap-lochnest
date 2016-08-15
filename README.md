@@ -7,9 +7,6 @@
 ![tap-lochnesttape](https://github.com/bySabi/tap-lochnest/blob/master/images/nessie.jpg?raw=true)
 
 
-
-`tap-lochnest` is not tight to any TAP implementation, can be use with [tap](https://github.com/tapjs/node-tap) or [tape](https://github.com/substack/tape) on `node` and `browser`
-
 ## Installation
 
 ### npm
@@ -107,6 +104,9 @@ Ex:
 ```js
 var test = lochNest(tape, { delimiter: ' | ' });
 ```
+
+## TAP Frameworks
+Work with [tape](https://github.com/substack/tape) on `node` and `browser`
 
 ## Contributing
 * Documentation improvement

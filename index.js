@@ -1,22 +1,3 @@
-function getTestArgs (name_, opts_, cb_) {
-  var name = '(anonymous)';
-  var opts = {};
-  var cb;
-
-  for (var i = 0; i < arguments.length; i++) {
-    var arg = arguments[i];
-    var t = typeof arg;
-    if (t === 'string') {
-      name = arg;
-    } else if (t === 'object') {
-      opts = arg || opts;
-    } else if (t === 'function') {
-      cb = arg;
-    }
-  }
-  return { name: name, opts: opts, cb: cb };
-};
-
 function lochNest(tape, opts) {
   var delimiter = opts && opts.delimiter || ' ';
 
@@ -50,11 +31,39 @@ function lochNest(tape, opts) {
     return tape(name, opts, callback(cb, name));
   }
 
-  tapa.skip = tape.skip;
-  tapa.only = tape.only;
-  tapa.onFinish = tape.onFinish;
+  return copyProps(tapa, tape);
+}
 
-  return tapa;
+// lifted from tape
+// https://github.com/substack/tape/blob/master/lib/test.js
+// for handle test([name], [opts], cb) signature
+function getTestArgs (name_, opts_, cb_) {
+  var name = '(anonymous)';
+  var opts = {};
+  var cb;
+
+  for (var i = 0; i < arguments.length; i++) {
+    var arg = arguments[i];
+    var t = typeof arg;
+    if (t === 'string') {
+      name = arg;
+    } else if (t === 'object') {
+      opts = arg || opts;
+    } else if (t === 'function') {
+      cb = arg;
+    }
+  }
+  return { name: name, opts: opts, cb: cb };
+};
+
+// Don´t relay on Object assign's paraphernalia
+function copyProps(dest, src) {
+  for (var prop in src) {
+    if (src.hasOwnProperty(prop)) {
+      dest[prop] = src[prop];
+    }
+  }
+  return dest;
 }
 
 module.exports = lochNest;
