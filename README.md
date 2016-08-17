@@ -1,6 +1,9 @@
 # tap-lochnest (TAP Loch Nest)
 
 [![npm version](https://badge.fury.io/js/tap-lochnest.svg)](https://badge.fury.io/js/tap-lochnest)
+[![npm downloads](https://img.shields.io/npm/dm/tap-lochnest.svg?style=flat-square)](https://www.npmjs.com/package/tap-lochnest)
+[![Build Status](https://travis-ci.org/bySabi/tap-lochnest.svg?branch=master)](https://travis-ci.org/bySabi/tap-lochnest)
+
 
 > A TAP helper for output nested test name beside parent test name.
 
