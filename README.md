@@ -4,7 +4,6 @@
 [![npm downloads](https://img.shields.io/npm/dm/tap-lochnest.svg?style=flat-square)](https://www.npmjs.com/package/tap-lochnest)
 [![Build Status](https://travis-ci.org/bySabi/tap-lochnest.svg?branch=master)](https://travis-ci.org/bySabi/tap-lochnest)
 [![Windows Tests](https://img.shields.io/appveyor/ci/bySabi/tap-lochnest/master.svg?label=Windows%20Tests)](https://ci.appveyor.com/project/bySabi/tap-lochnest)
-[![bitHound Overall Score](https://www.bithound.io/github/bySabi/tap-lochnest/badges/score.svg)](https://www.bithound.io/github/bySabi/tap-lochnest)
 [![Donate](https://img.shields.io/badge/$-support-green.svg?style=flat-square)](https://paypal.me/bySabi/10)
 
 > A TAP helper for output nested test name beside parent test name.
